@@ -1,5 +1,5 @@
-import { Main } from 'components/main'
+import Logo from 'components/Logo'
 
 export default function Home() {
-  return <Main title="Boilerplate" description="Testando" />
+  return <Logo />
 }
