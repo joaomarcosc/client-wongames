@@ -7,7 +7,7 @@ export type Props = {
 }
 
 function Logo({
-  color = 'white',
+  color = 'black',
   size = 'normal',
   hideOnMobile = false
 }: Props) {

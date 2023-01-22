@@ -6,14 +6,14 @@ describe('Logo', () => {
   it('Should render a white label by default', () => {
     const { getByLabelText } = renderWithTheme(<Logo />)
     expect(getByLabelText(/Won games/i).parentElement).toHaveStyle({
-      color: '#FAFAFA'
+      color: '#030517'
     })
   })
 
   it('Should render color of "color" props', () => {
-    const { getByLabelText } = renderWithTheme(<Logo color="black" />)
+    const { getByLabelText } = renderWithTheme(<Logo color="white" />)
     expect(getByLabelText(/Won games/i).parentElement).toHaveStyle({
-      color: '#030517'
+      color: '#FAFAFA'
     })
   })
 
