@@ -11,8 +11,7 @@ describe('{{pascalCase name}}', () => {
   it('Should render with correctly style', () => {
     const { container } = render(<{{pascalCase name}} />)
 
-    expect(container.firstChild).toHaveStyleRule({
-      'background-color': '#06092b'
-    })
+    expect(container.firstChild).toHaveStyleRule('background-color', '#06092b')
   })
 })
+

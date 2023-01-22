@@ -3,7 +3,7 @@ import media from 'styled-media-query'
 
 import { Props } from '.'
 
-const wrapperModfier = {
+const wrapperModifier = {
   normal: () => css`
     width: 11rem;
     height: 3.3rem;
@@ -35,7 +35,7 @@ export const Wrapper = styled.section<Props>`
   ${({ theme, color, size, hideOnMobile }) => css`
     color: ${theme.colors[color!]};
 
-    ${!!size && wrapperModfier[size]}
-    ${!!hideOnMobile && wrapperModfier.hideOnMobile}
+    ${!!size && wrapperModifier[size]}
+    ${!!hideOnMobile && wrapperModifier.hideOnMobile}
   `}
 `
